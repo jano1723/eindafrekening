@@ -1,0 +1,67 @@
+key;omschrijving;waarde;;;;
+
+stroom_levering_variabel_2201_3103;Stroom levering variabel;0,17023
+stroom_levering_variabel_3103_3006;Stroom levering variabel;0,12723
+stroom_levering_variabel_3006_3009;Stroom levering variabel;
+stroom_levering_variabel_3009_3112;Stroom levering variabel;
+stroom_levering_variabel_3112_2101;Stroom levering variabel;
+
+stroom_teruglevering_2201_3103;Teruglevering;0,15
+stroom_teruglevering_3103_3006;Teruglevering;0,15
+stroom_teruglevering_3006_3009;Teruglevering;
+stroom_teruglevering_3009_3112;Teruglevering;
+stroom_teruglevering_3112_2101;Teruglevering;
+
+stroom_vastrecht_2201_0104;Vastrecht stroom;0,3449
+stroom_vastrecht_3103_3006;Vastrecht stroom;0,3449
+stroom_vastrecht_3006_3009;Vastrecht stroom;
+stroom_vastrecht_3009_3112;Vastrecht stroom;
+stroom_vastrecht_3112_2101;Vastrecht stroom;
+
+stroom_terugleverkosten_3251_3500_2201_0104;Terugleverkosten;1,29129
+stroom_terugleverkosten_3251_3500_3103_3006;Terugleverkosten;1,29129
+stroom_terugleverkosten_3251_3500_3006_3009;Terugleverkosten;
+stroom_terugleverkosten_3251_3500_3009_3112;Terugleverkosten;
+stroom_terugleverkosten_3251_3500_3112_2101;Terugleverkosten;
+
+stroom_korting_thuisvoordeel_2201_3103;Korting thuisvoordeel;-10%
+stroom_korting_thuisvoordeel_3103_3006;Korting thuisvoordeel;-10%
+stroom_korting_thuisvoordeel_3006_3009;Korting thuisvoordeel;
+stroom_korting_thuisvoordeel_3009_3112;Korting thuisvoordeel;
+stroom_korting_thuisvoordeel_3112_2101;Korting thuisvoordeel;
+
+stroom_netbeheer_3x25A_2201_0104;Netbeheer stroom;1,30390
+stroom_netbeheer_3x25A_3103_3006;Netbeheer stroom;1,30365
+stroom_netbeheer_3x25A_3006_3009;Netbeheer stroom;
+stroom_netbeheer_3x25A_3009_3112;Netbeheer stroom;
+stroom_netbeheer_3x25A_3112_2101;Netbeheer stroom;
+
+stroom_energiebelasting_2201_3112;Energiebelasting stroom;0,11085
+stroom_energiebelasting_3112_2101;Energiebelasting stroom;
+
+stroom_vermindering_energiebelasting_2201_0101;Vermindering energiebelasting;-1,72317
+stroom_vermindering_energiebelasting_3112_2101;Vermindering energiebelasting;
+
+gas_variabel_2201_3103;Gas variabel;0,56822
+gas_variabel_3103_3006;Gas variabel;0,49857
+gas_variabel_3006_3009;Gas variabel;
+gas_variabel_3009_3112;Gas variabel;
+gas_variabel_3112_2101;Gas variabel;
+
+gas_vastrecht_2201_0101;Vastrecht gas;0,21323
+gas_vastrecht_3112_2101;Vastrecht gas;
+
+gas_netbeheer_2201_3103;Netbeheer gas;0,47698
+gas_netbeheer_3103_3006;Netbeheer gas;0,51135
+gas_netbeheer_3006_3009;Netbeheer gas;
+gas_netbeheer_3009_0101;Netbeheer gas;
+gas_netbeheer_3112_2101;Netbeheer gas;
+
+gas_energiebelasting_2201_3112;Energiebelasting gas;0,7268
+gas_energiebelasting_3112_2101;Energiebelasting gas;
+
+voorschot_2201_3103;voorschot;-80,00
+voorschot_3103_3006;voorschot;-80,00
+voorschot_3006_3009;voorschot;-80,00
+voorschot_3009_0101;voorschot;-80,00
+voorschot_3112_2101;voorschot;-80,00
