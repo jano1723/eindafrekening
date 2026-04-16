@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>Specificatie jaarnota 2026</title>
+
+<style>
+body {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 13px;
+    background: white;
+    margin: 20px;
+}
+
+.header {
+    background: #c00000;
+    color: white;
+    font-weight: bold;
+    padding: 6px 10px;
+    font-size: 16px;
+}
+
+.subheader {
+    background: #c00000;
+    color: white;
+    font-weight: bold;
+    padding: 4px 10px;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5px;
+}
+
+td, th {
+    border: 1px solid #d9d9d9;
+    padding: 3px 6px;
+    vertical-align: middle;
+}
+
+.section {
+    font-weight: bold;
+    background: #ffffff;
+}
+
+.right { text-align: right; }
+.center { text-align: center; }
+
+.thick-top td {
+    border-top: 2px solid black;
+}
+
+.thick-bottom td {
+    border-bottom: 2px solid black;
+}
+
+.no-border td {
+    border: none;
+}
+td.negatief {
+    color: red !important;
+}
+
+.thick-top td:nth-child(7) {
+    font-size: 40px;
+}
+
+.grote-letter {
+    font-size: 16px;  /* pas aan naar gewenste grootte */
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5px;
+    table-layout: fixed;   /* BELANGRIJK */
+}
+.col-1 { width: 32%; }   /* Omschrijving */
+.col-2 { width: 9%; }    /* Van */
+.col-3 { width: 9%; }    /* Tot */
+.col-4 { width: 8%; }    /* Aantal */
+.col-5 { width: 6%; }    /* Eenheid */
+.col-6 { width: 6%; }   /* Tarief */
+.col-7 { width: 6%; }   /* Bedrag */
+.col-8 { width: 6%; }   /* Subtotaal */
+}
+.col-1 {
+    width: 32%;
+    word-wrap: break-word;
+}
+
+
+//#tabelstroom tr > *:nth-child(8)::before,
+//#tabelGas tr > *:nth-child(8)::before {
+//    content: "€ ";
+//}
+//#tabelstroom tr > *:nth-child(7) { background: yellow; }
+
+//table td:nth-child(8)::before {
+   //content: "€ ";
+//}
+
+
+</style>
+</head>
+
+<body>
+<div id="debugLog" style="color:red; font-weight:bold;"></div>
+
+
+<div class="header">
+Specificatie jaarrekening 2026 voor Mgr. Scheppersstraat 4, OUD GASTEL
+</div>
+
+<div class="subheader">
+Specificatie kosten stroom (incl. btw)
+</div>
+
+<table id="tabelstroom">
+<colgroup>
+    <col class="col-1">
+    <col class="col-2">
+    <col class="col-3">
+    <col class="col-4">
+    <col class="col-5">
+    <col class="col-6">
+    <col class="col-7">
+    <col class="col-8">
+</colgroup>
+<tbody>
+
+<tr>
+    <td colspan="8">Het bedrag dat je voor stroom betaalt is opgebouwd uit:</td>
+</tr>
+
+<!-- =========================
+   LEVERINGSKOSTEN
+========================= -->
+
+<tr class="section">
+    <td colspan="8"><strong>Leveringskosten elektriciteit</strong></td>
+</tr>
+<tr style="font-weight: bold; border-bottom: 2px solid #000;">
+    <td>Omschrijving</td>
+    <td class="center">Startdatum</td>
+    <td class="center">Einddatum</td>
+    <td class="center">Hoeveelh</td>
+    <td class="center">Ehd</td>
+    <td class="center">Tarief</td>
+    <td class="center">Subtotaal</td>
+    <td class="center">Totaal</td>
+</tr>
+
+<tr class="section">
+    <td colspan="8"><strong>Variabele leveringskosten enkeltarief</strong></td>
+</tr>
+<tr>
+    <td>Variabele leveringskosten enkeltarief</td>
+    <td class="center">22-01-2026</td>
+    <td class="center">31-03-2026</td>
+    <td class="center"></td>
+    <td>kWh</td>
+    <td class="right tarief" data-key="stroom_levering_variabel_2201_3103"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Variabele leveringskosten enkeltarief</td>
+    <td class="center">31-03-2026</td>
+    <td class="center">30-06-2026</td>
+    <td class="center"></td>
+    <td>kWh</td>
+    <td class="right tarief" data-key="stroom_levering_variabel_3103_3006"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Variabele leveringskosten enkeltarief</td>
+    <td class="center">30-06-2026</td>
+    <td class="center">30-09-2026</td>
+    <td class="center"></td>
+    <td>kWh</td>
+    <td class="right tarief" data-key="stroom_levering_variabel_3006_3009"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Variabele leveringskosten enkeltarief</td>
+    <td class="center">30-09-2026</td>
+    <td class="center">31-12-2026</td>
+    <td class="center"></td>
+    <td>kWh</td>
+    <td class="right tarief" data-key="stroom_levering_variabel_3009_3112"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Variabele leveringskosten enkeltarief</td>
+    <td class="center">31-12-2026</td>
+    <td class="center">21-01-2027</td>
+    <td class="center"></td>
+    <td>kWh</td>
+    <td class="right tarief" data-key="stroom_levering_variabel_3112_2101"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr class="blok-einde"></tr>
+
+
+<!-- =========================
+   TERUGLEVERING
+========================= -->
+
+<tr class="section">
+    <td colspan="8"><strong>Terugleveringskosten elektriciteit</strong></td>
+</tr>
+
+<tr>
+    <td>Teruglevering boven verbruik (geen btw)</td>
+    <td class="center">22-01-2026</td>
+    <td class="center">31-03-2026</td>
+    <td class="center"></td>
+    <td>kWh</td>
+    <td class="right tarief" data-key="stroom_teruglevering_2201_3103"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Teruglevering boven verbruik (geen btw)</td>
+    <td class="center">31-03-2026</td>
+    <td class="center">30-06-2026</td>
+    <td class="center"></td>
+    <td>kWh</td>
+    <td class="right tarief" data-key="stroom_teruglevering_3103_3006"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Teruglevering boven verbruik (geen btw)</td>
+    <td class="center">30-06-2026</td>
+    <td class="center">30-09-2026</td>
+    <td class="center"></td>
+    <td>kWh</td>
+    <td class="right tarief" data-key="stroom_teruglevering_3006_3009"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Teruglevering boven verbruik (geen btw)</td>
+    <td class="center">30-09-2026</td>
+    <td class="center">31-12-2026</td>
+    <td class="center"></td>
+    <td>kWh</td>
+    <td class="right tarief" data-key="stroom_teruglevering_3009_3112"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Teruglevering boven verbruik (geen btw)</td>
+    <td class="center">31-12-2026</td>
+    <td class="center">21-01-2027</td>
+    <td class="center"></td>
+    <td>kWh</td>
+    <td class="right tarief" data-key="stroom_teruglevering_3112_2101"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr class="blok-einde"></tr>
+
+
+<!-- =========================
+   VASTE LEVERINGSKOSTEN
+========================= -->
+
+<tr class="section">
+    <td colspan="8"><strong>Vaste leveringskosten elektriciteit</strong></td>
+</tr>
+
+<tr>
+    <td>Vaste leveringskosten</td>
+    <td class="center">22-01-2026</td>
+    <td class="center">31-03-2026</td>
+    <td class="center" data-aantal="69">69</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="stroom_vastrecht_2201_0104"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Vaste leveringskosten</td>
+    <td class="center">31-03-2026</td>
+    <td class="center">30-06-2026</td>
+    <td class="center" data-aantal="91">91</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="stroom_vastrecht_3103_3006"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Vaste leveringskosten</td>
+    <td class="center">30-06-2026</td>
+    <td class="center">30-09-2026</td>
+    <td class="center" data-aantal="92">92</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="stroom_vastrecht_3006_3009"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Vaste leveringskosten</td>
+    <td class="center">30-09-2026</td>
+    <td class="center">31-12-2026</td>
+    <td class="center" data-aantal="92">92</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="stroom_vastrecht_3009_3112"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Vaste leveringskosten</td>
+    <td class="center">31-12-2026</td>
+    <td class="center">21-01-2027</td>
+    <td class="center" data-aantal="21">21</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="stroom_vastrecht_3112_2101"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr class="blok-einde"></tr>
+
+<!-- =========================
+   TERUGLEVERINGSKOSTEN
+========================= -->
+
+<tr class="section">
+    <td colspan="8"><strong>Terugleverkosten Essent</strong></td>
+</tr>
+
+<tr>
+    <td>Terugleverkosten 3.251 t/m 3.500 kWh (€ 36,57 / maand)</td>
+    <td class="center">22-01-2026</td>
+    <td class="center">31-03-2026</td>
+    <td class="center" data-aantal="69">69</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="stroom_terugleverkosten_3251_3500_2201_0104"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Terugleverkosten 3.251 t/m 3.500 kWh (€ 36,57 / maand)</td>
+    <td class="center">31-03-2026</td>
+    <td class="center">30-06-2026</td>
+    <td class="center" data-aantal="91">91</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="stroom_terugleverkosten_3251_3500_3103_3006"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Terugleverkosten 3.251 t/m 3.500 kWh (€ 36,57 / maand)</td>
+    <td class="center">30-06-2026</td>
+    <td class="center">30-09-2026</td>
+    <td class="center" data-aantal="92">92</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="stroom_terugleverkosten_3251_3500_3006_3009"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Terugleverkosten 3.251 t/m 3.500 kWh (€ 36,57 / maand)</td>
+    <td class="center">30-09-2026</td>
+    <td class="center">31-12-2026</td>
+    <td class="center" data-aantal="92">92</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="stroom_terugleverkosten_3251_3500_3009_3112"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Terugleverkosten 3.251 t/m 3.500 kWh (€ 36,57 / maand)</td>
+    <td class="center">31-12-2026</td>
+    <td class="center">21-01-2027</td>
+    <td class="center" data-aantal="21">21</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="stroom_terugleverkosten_3251_3500_3112_2101"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr class="blok-einde"></tr>
+
+<!-- =========================
+   KORTING
+========================= -->
+
+<tr class="section">
+    <td colspan="8"><strong>Korting</strong></td>
+</tr>
+
+<tr>
+    <td>Korting Thuisvoordeel</td>
+    <td class="center">22-01-2026</td>
+    <td class="center">31-03-2026</td>
+    <td class="center" data-aantal="69">69</td>
+    <td>€</td>
+    <td class="right tarief" data-key="stroom_korting_thuisvoordeel_2201_3103"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Korting Thuisvoordeel</td>
+    <td class="center">31-03-2026</td>
+    <td class="center">30-06-2026</td>
+    <td class="center" data-aantal="91">91</td>
+    <td>€</td>
+    <td class="right tarief" data-key="stroom_korting_thuisvoordeel_3103_3006"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Korting Thuisvoordeel</td>
+    <td class="center">30-06-2026</td>
+    <td class="center">30-09-2026</td>
+    <td class="center" data-aantal="92">92</td>
+    <td>€</td>
+    <td class="right tarief" data-key="stroom_korting_thuisvoordeel_3006_3009"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Korting Thuisvoordeel</td>
+    <td class="center">30-09-2026</td>
+    <td class="center">31-12-2026</td>
+    <td class="center" data-aantal="92">92</td>
+    <td>€</td>
+    <td class="right tarief" data-key="stroom_korting_thuisvoordeel_3009_3112"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Korting Thuisvoordeel</td>
+    <td class="center">31-12-2026</td>
+    <td class="center">21-01-2027</td>
+    <td class="center" data-aantal="21">21</td>
+    <td>€</td>
+    <td class="right tarief" data-key="stroom_korting_thuisvoordeel_3112_2101"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr class="blok-einde"></tr>
+<!-- =========================
+   NETBEHEERKOSTEN
+=========================-->
+
+<tr class="section">
+    <td colspan="8"><strong>Netbeheerkosten</strong></td>
+</tr>
+
+<tr>
+    <td>voor Enexis B.V. : Capaciteitstarief t/m 3 x 25A of t/m 1x 80A</td>
+    <td class="center">22-01-2026</td>
+    <td class="center">31-03-2026</td>
+    <td class="center" data-aantal="69">69</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="stroom_netbeheer_3x25A_2201_0104"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>voor Enexis B.V. : Capaciteitstarief t/m 3 x 25A of t/m 1x 80A</td>
+    <td class="center">31-03-2026</td>
+    <td class="center">30-06-2026</td>
+    <td class="center" data-aantal="91">91</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="stroom_netbeheer_3x25A_3103_3006"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>voor Enexis B.V. : Capaciteitstarief t/m 3 x 25A of t/m 1x 80A</td>
+    <td class="center">30-06-2026</td>
+    <td class="center">30-09-2026</td>
+    <td class="center" data-aantal="92">92</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="stroom_netbeheer_3x25A_3006_3009"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>voor Enexis B.V. : Capaciteitstarief t/m 3 x 25A of t/m 1x 80A</td>
+    <td class="center">30-09-2026</td>
+    <td class="center">31-12-2026</td>
+    <td class="center" data-aantal="92">92</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="stroom_netbeheer_3x25A_3009_3112"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>voor Enexis B.V. : Capaciteitstarief t/m 3 x 25A of t/m 1x 80A</td>
+    <td class="center">31-12-2026</td>
+    <td class="center">21-01-2027</td>
+    <td class="center" data-aantal="21">21</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="stroom_netbeheer_3x25A_3112_2101"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr class="blok-einde"></tr>
+
+<!--=========================
+   BELASTING EN TOESLAGEN
+=========================-->
+
+<tr class="section">
+    <td colspan="8"><strong>Belasting en toeslagen</strong></td>
+</tr>
+
+<tr>
+    <td>Energiebelasting zone 1 (1 t/m 2.900 kWh)</td>
+    <td class="center">22-01-2026</td>
+    <td class="center">31-12-2026</td>
+    <td class="center" data-aantal="0">0,00</td>
+    <td>kWh</td>
+    <td class="right tarief" data-key="stroom_energiebelasting_2201_3112"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Energiebelasting zone 1 (1 t/m 2.900 kWh)</td>
+    <td class="center">31-12-2026</td>
+    <td class="center">21-01-2027</td>
+    <td class="center" data-aantal="0">0,00</td>
+    <td>kWh</td>
+    <td class="right tarief" data-key="stroom_energiebelasting_3112_2101"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr class="blok-einde"></tr>
+<!--=========================
+   NETBEHEERKOSTEN
+=========================-->
+
+<tr class="section">
+    <td colspan="8"><strong>Vermindering energiebelasting</strong></td>
+</tr>
+
+    <td>Vermindering energiebelasting (-€ 631,39 / jaar)</td>
+    <td class="center">22-01-2026</td>
+    <td class="center">01-01-2027</td>
+    <td class="center" data-aantal="344">344</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="stroom_vermindering_energiebelasting_2201_0101"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Vermindering energiebelasting (-€ 631,39 / jaar)</td>
+    <td class="center">31-12-2026</td>
+    <td class="center">21-01-2027</td>
+    <td class="center" data-aantal="21">21</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="stroom_vermindering_energiebelasting_3112_2101"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr class="blok-einde"></tr>
+
+
+<!-- =========================
+   TOTAAL A
+========================= -->
+
+<tr class="thick-top">
+    <td colspan="6" class="right"><strong>Totaal Stroom</strong></td>
+    <td class="right"><strong class="grote-letter">A</strong></td>
+    <td class="right subtotaal_a_stroom grote-letter"></td>
+</tr>
+
+</tbody>
+</table>
+
+
+<div class="subheader">
+Specificatie kosten gas (incl. btw)
+</div>
+
+<table id="tabelGas">
+<colgroup>
+    <col class="col-1">
+    <col class="col-2">
+    <col class="col-3">
+    <col class="col-4">
+    <col class="col-5">
+    <col class="col-6">
+    <col class="col-7">
+    <col class="col-8">
+</colgroup>
+
+<tr>
+    <td>Gas - Variabel - Flexibele looptijd</td>
+    <td class="center"></td>
+    <td class="center"></td>
+    <td class="center"></td>
+    <td></td>
+    <td class="right tarief"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr style="font-weight: bold; border-bottom: 2px solid #000;">
+    <td>Omschrijving</td>
+    <td class="center">Startdatum</td>
+    <td class="center">Einddatum</td>
+    <td class="center">Hoeveelh</td>
+    <td class="center">Ehd</td>
+    <td class="center">Tarief</td>
+    <td class="center">Subtotaal</td>
+    <td class="center">Totaal</td>
+</tr>
+
+<tr>
+    <td colspan="8"><strong>Variabele leveringskosten (regio 05)</strong></td>
+</tr>
+
+<tr class="section">
+
+<tr>
+    <td>Variabele leveringskosten (regio 05)</td>
+    <td class="center">22-01-2026</td>
+    <td class="center">31-03-2026</td>
+    <td class="center"></td>
+    <td>m³</td>
+    <td class="right tarief" data-key="gas_variabel_2201_3103"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Variabele leveringskosten (regio 05)</td>
+    <td class="center">31-03-2026</td>
+    <td class="center">30-06-2026</td>
+    <td class="center"></td>
+    <td>m³</td>
+    <td class="right tarief" data-key="gas_variabel_3103_3006"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Variabele leveringskosten (regio 05)</td>
+    <td class="center">30-06-2026</td>
+    <td class="center">30-09-2026</td>
+    <td class="center"></td>
+    <td>m³</td>
+    <td class="right tarief" data-key="gas_variabel_3006_3009"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Variabele leveringskosten (regio 05)</td>
+    <td class="center">30-09-2026</td>
+    <td class="center">31-12-2026</td>
+    <td class="center"></td>
+    <td>m³</td>
+    <td class="right tarief" data-key="gas_variabel_3009_3112"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Variabele leveringskosten (regio 05)</td>
+    <td class="center">31-12-2026</td>
+    <td class="center">21-01-2027</td>
+    <td class="center"></td>
+    <td>m³</td>
+    <td class="right tarief" data-key="gas_variabel_3112_2101"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr class="blok-einde"></tr>
+
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="right"></td>
+    <td class="right"></td>
+</tr>
+
+<tr>
+    <td colspan="8"><strong>Vaste leveringskosten gas</strong></td>
+</tr>
+
+<tr class="section">
+
+<tr>
+    <td>Vaste leveringskosten</td>
+    <td class="center">22-01-2026</td>
+    <td class="center">01-01-2027</td>
+    <td class="center" data-aantal="344">344</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="gas_vastrecht_2201_0101"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Vaste leveringskosten</td>
+    <td class="center">31-12-2026</td>
+    <td class="center">21-01-2027</td>
+    <td class="center" data-aantal="21">21</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="gas_vastrecht_3112_2101"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr class="blok-einde"></tr>
+
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="right"></td>
+    <td class="right"></td>
+</tr>
+
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="right"></td>
+    <td class="right subtotaal_gas_levering"></td>
+</tr>
+
+<tr>
+    <td colspan="8"><strong>Netbeheerkosten</strong></td>
+</tr>
+
+<tr class="section">
+
+<tr>
+    <td>voor Enexis B.V. : Capaciteitstarief t/m 10 m3/uur,</td>
+    <td class="center">22-01-2026</td>
+    <td class="center">31-03-2026</td>
+    <td class="center" data-aantal="68">68</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="gas_netbeheer_2201_3103"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>stand.jaarv. 500-4.000 m3</td>
+    <td></td><td></td><td></td><td></td>
+    <td></td><td class="right"></td><td class="right"></td>
+</tr>
+
+<tr>
+    <td>voor Enexis B.V. : Capaciteitstarief t/m 10 m3/uur,</td>
+    <td class="center">31-03-2026</td>
+    <td class="center">30-06-2026</td>
+    <td class="center" data-aantal="91">91</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="gas_netbeheer_3103_3006"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+<tr>
+    <td>stand.jaarv. 500-4.000 m3</td>
+    <td></td><td></td><td></td><td></td>
+    <td></td><td class="right"></td><td class="right"></td>
+</tr>
+
+<tr>
+    <td>voor Enexis B.V. : Capaciteitstarief t/m 10 m3/uur,</td>
+    <td class="center">30-06-2026</td>
+    <td class="center">30-09-2026</td>
+    <td class="center" data-aantal="92">92</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="gas_netbeheer_3006_3009"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+<tr>
+    <td>stand.jaarv. 500-4.000 m3</td>
+    <td></td><td></td><td></td><td></td>
+    <td></td><td class="right"></td><td class="right"></td>
+</tr>
+
+<tr>
+    <td>voor Enexis B.V. : Capaciteitstarief t/m 10 m3/uur,</td>
+    <td class="center">30-09-2026</td>
+    <td class="center">01-01-2027</td>
+    <td class="center" data-aantal="93">93</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="gas_netbeheer_3009_0101"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+<tr>
+    <td>stand.jaarv. 500-4.000 m3</td>
+    <td></td><td></td><td></td><td></td>
+    <td></td><td class="right"></td><td class="right"></td>
+</tr>
+
+<tr>
+    <td>voor Enexis B.V. : Capaciteitstarief t/m 10 m3/uur,</td>
+    <td class="center">31-12-2026</td>
+    <td class="center">21-01-2027</td>
+    <td class="center" data-aantal="21">21</td>
+    <td>Dagen</td>
+    <td class="right tarief" data-key="gas_netbeheer_3112_2101"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+<tr>
+    <td>stand.jaarv. 500-4.000 m3</td>
+    <td></td><td></td><td></td><td></td>
+    <td></td><td class="right"></td><td class="right"></td>
+</tr>
+
+<tr class="blok-einde"></tr>
+
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="right"></td>
+    <td class="right"></td>
+</tr>
+
+<tr>
+    <td colspan="8"><strong>Belasting en toeslagen</strong></td>
+</tr>
+
+<tr class="section">
+
+<tr>
+    <td>Energiebelasting zone 1 (1 t/m 170.000 m3)</td>
+    <td class="center">22-01-2026</td>
+    <td class="center">31-12-2026</td>
+    <td class="center" data-aantal="0">0,00</td>
+    <td>m³</td>
+    <td class="right tarief" data-key="gas_energiebelasting_2201_3112"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td>Energiebelasting zone 1 (1 t/m 170.000 m3)</td>
+    <td class="center">31-12-2026</td>
+    <td class="center">21-01-2027</td>
+    <td class="center" data-aantal="0">0,00</td>
+    <td>m³</td>
+    <td class="right tarief" data-key="gas_energiebelasting_3112_2101"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr class="blok-einde"></tr>
+
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="right"></td>
+    <td class="right"></td>
+</tr>
+
+<tr class="thick-top">
+    <td colspan="6" class="right"><strong>Totaal Gas</strong></td>
+    <td class="right"><strong class="grote-letter">B</strong></td>
+    <td class="right subtotaal_a_gas grote-letter"></td>
+</tr>
+
+<tr>
+    <td></td>
+    <td></td><td></td><td></td><td></td>
+    <td></td>
+    <td class="right"></td>
+    <td class="right subtotaal_gas_belasting"></td>
+</tr>
+
+<tr class="totaal-rij">
+    <td colspan="7"></td>
+    <td></td>
+</tr>
+
+<style>
+.totaal-rij td {
+    padding-top: 15px;
+    border-bottom: 3px solid #000;
+}
+</style>
+
+<tr>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td>
+   <td class="right"><strong class="grote-letter">A</strong></td>
+    <td class="right subtotaal_a grote-letter"></td>
+</tr>
+
+<tr>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td>
+   <td class="right"><strong class="grote-letter">B</strong></td>
+    <td class="right subtotaal_b_gas grote-letter"></td>
+</tr>
+
+<tr>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td>
+    <td class="right"><strong class="grote-letter">Totalen A+B</td>
+    <td class="right subtotaal_totaal_ab grote-letter"></td>
+</tr>
+
+<tr>
+    <td>Betaald voorschot 2026. Aantal: maanden</td>
+    <td class="center">01-01-2026</td>
+    <td class="center">21-01-2027</td>
+    <td class="center" data-aantal="0">0,00</td>
+    <td>Maanden</td> <!-- 🔥 was Dagen -->
+    <td class="right tarief" data-key="voorschot_3112_2101"></td>
+    <td class="right bedrag"></td>
+    <td class="right subtotaal"></td>
+</tr>
+
+<tr>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td>
+    <td class="right"></td>
+    <td class="right subtotaal_terug"></td>
+</tr>
+
+</table>
+
+<script>
+/* =====================================================
+   HULPFUNCTIES
+===================================================== */
+
+function parseDatumNL(d) {
+    const [dd, mm, yyyy] = d.split('-').map(Number);
+    return new Date(yyyy, mm - 1, dd);
+}
+
+async function laadCSV(bestand) {
+    const response = await fetch(bestand);
+    const tekst = await response.text();
+
+    const regels = tekst
+        .split(/\r?\n/)
+        .map(r => r.replace(/"/g, '').trim())
+        .filter(r => r.length > 0);
+
+    const data = [];
+
+    for (let i = 1; i < regels.length; i++) {
+        const kol = regels[i].split(';');
+        if (!kol[0]) continue;
+
+	data.push({
+    datum: parseDatumNL(kol[0]),
+    p1: parseFloat((kol[1] || '0').replace(',', '.')),
+    p2: parseFloat((kol[2] || '0').replace(',', '.')),
+    n1: parseFloat((kol[3] || '0').replace(',', '.')),
+    n2: parseFloat((kol[4] || '0').replace(',', '.')),
+    gas: parseFloat((kol[5] || '0').replace(',', '.')),
+    zon: parseFloat((kol[6] || '0').replace(',', '.')),
+    p:   parseFloat((kol[7] || '0').replace(',', '.')), // totaal verbruik
+    n:   parseFloat((kol[8] || '0').replace(',', '.'))  // totaal teruglevering
+});
+
+ }
+
+    return data;
+}
+
+/* =====================================================
+   TARIEVEN LADEN
+===================================================== */
+<!--
+async function laadTarieven() {
+    const response = await fetch('tarief.csv');
+    const text = await response.text();
+    const regels = text.split(/\r?\n/);
+
+    const tarieven = {};
+
+    regels.forEach(regel => {
+        const cols = regel.split(';');
+        if (cols.length >= 3) {
+            const key = cols[0]?.trim();
+            const waarde = cols[2]?.trim();
+            if (key && waarde) {
+                tarieven[key] = waarde;
+            }
+        }
+    });
+
+    document.querySelectorAll('td.tarief[data-key]').forEach(td => {
+        const key = td.dataset.key;
+        if (tarieven[key]) {
+            td.textContent = tarieven[key];
+        }
+    });
+}
+-->
+/* =====================================================
+   DATUM UPDATE (kolom 3 dynamisch)
+===================================================== */
+<!--
+
+function updateEindDatums() {
+
+    const vandaag = new Date();
+    const gisteren = new Date(vandaag);
+    gisteren.setDate(vandaag.getDate() - 1);
+
+    const dag = String(gisteren.getDate()).padStart(2, '0');
+    const maand = String(gisteren.getMonth() + 1).padStart(2, '0');
+    const jaar = gisteren.getFullYear();
+    const datumGisteren = `${dag}-${maand}-${jaar}`;
+
+    document.querySelectorAll("table tr").forEach(tr => {
+        const tdStart = tr.children[1];
+        const tdEind  = tr.children[2];
+
+        if (!tdStart || !tdEind) return;
+        if (!/^\d{2}-\d{2}-\d{4}$/.test(tdEind.textContent.trim())) return;
+
+        tdEind.textContent = datumGisteren;
+    });
+}
+-->
+<!--
+function updateEindDatums() {
+
+    const vandaag = new Date();
+    vandaag.setHours(0,0,0,0);
+
+    const gisteren = new Date(vandaag);
+    gisteren.setDate(vandaag.getDate() - 1);
+
+    const dag = String(gisteren.getDate()).padStart(2, '0');
+    const maand = String(gisteren.getMonth() + 1).padStart(2, '0');
+    const jaar = gisteren.getFullYear();
+    const datumGisterenTekst = `${dag}-${maand}-${jaar}`;
+
+    document.querySelectorAll("table tr").forEach(tr => {
+
+        const tds = tr.querySelectorAll("td");
+        if (tds.length < 3) return;
+
+        const startTekst = tds[1].textContent.trim();
+        const eindTekst  = tds[2].textContent.trim();
+
+        if (!/^\d{2}-\d{2}-\d{4}$/.test(startTekst)) return;
+        if (!/^\d{2}-\d{2}-\d{4}$/.test(eindTekst)) return;
+
+        const startDatum = parseDatumNL(startTekst);
+        const eindDatum  = parseDatumNL(eindTekst);
+
+        startDatum.setHours(0,0,0,0);
+        eindDatum.setHours(0,0,0,0);
+
+        // 🔴 BELANGRIJK: alleen als periode nog loopt
+        if (startDatum <= gisteren && eindDatum > gisteren) {
+            tds[2].textContent = datumGisterenTekst;
+        }
+
+    });
+}
+-->
+/* =====================================================
+   DAGEN BEREKENEN
+===================================================== */
+function berekenDagen() {
+
+    document.querySelectorAll("table tr").forEach(tr => {
+        const tds = tr.querySelectorAll("td");
+        if (tds.length < 5) return;
+
+        const tdStart = tds[1];
+        const tdEind  = tds[2];
+        const tdAantal = tds[3];
+        const tdType = tds[4];
+
+        if (!tdType || tdType.textContent.trim().toLowerCase() !== "dagen") return;
+
+        const startTekst = tdStart.textContent.trim();
+        const eindTekst  = tdEind.textContent.trim();
+
+        if (!/^\d{2}-\d{2}-\d{4}$/.test(startTekst)) return;
+        if (!/^\d{2}-\d{2}-\d{4}$/.test(eindTekst)) return;
+
+        const startDatum = parseDatumNL(startTekst);
+        const eindDatum  = parseDatumNL(eindTekst);
+
+        startDatum.setHours(0,0,0,0);
+        eindDatum.setHours(0,0,0,0);
+
+        const diffMs = eindDatum - startDatum;
+        const dagen = Math.floor(diffMs / (1000 * 60 * 60 * 24))+1;
+
+        tdAantal.textContent = dagen;
+    });
+}
+
+/* =====================================================
+   BEREKENEN MAANDEN
+===================================================== */
+function berekenMaanden() {
+
+    const vandaag = new Date();
+
+    document.querySelectorAll("table tr").forEach(tr => {
+        const tds = tr.querySelectorAll("td");
+        if (tds.length < 5) return;
+
+        const type = tds[4].textContent.trim().toLowerCase();
+        if (type !== "maanden") return;
+
+        const start = tds[1].textContent.trim();
+
+        if (!/^\d{2}-\d{2}-\d{4}$/.test(start)) return;
+
+        const [d1, m1, y1] = start.split('-').map(Number);
+
+        const m2 = vandaag.getMonth() + 1;
+        const y2 = vandaag.getFullYear();
+
+        // 🔥 STARTMAAND + HUIDIGE MAAND mee tellen
+        let maanden = (y2 - y1) * 12 + (m2 - m1) + 1;
+
+        if (maanden < 1) maanden = 1;
+
+        tds[3].textContent = maanden;
+    });
+}
+<!--
+function berekenMaanden() {
+
+    document.querySelectorAll("table tr").forEach(tr => {
+        const tds = tr.querySelectorAll("td");
+        if (tds.length < 5) return;
+
+        const type = tds[4].textContent.trim().toLowerCase();
+        if (type !== "maanden") return;
+
+        const start = tds[1].textContent.trim();
+        const eind  = tds[2].textContent.trim();
+
+        if (!/^\d{2}-\d{2}-\d{4}$/.test(start)) return;
+        if (!/^\d{2}-\d{2}-\d{4}$/.test(eind)) return;
+
+        const [d1, m1, y1] = start.split('-').map(Number);
+        const [d2, m2, y2] = eind.split('-').map(Number);
+
+        let maanden = (y2 - y1) * 12 + (m2 - m1);
+
+        // afronden naar boven als er dagen over zijn
+        if (d2 >= d1) maanden += 1;
+
+        tds[3].textContent = maanden;
+    });
+}
+
+-->
+/* =====================================================
+   VERBRUIK / TERUGLEVERING BEREKENEN
+===================================================== */
+
+function berekenVerbruik(csvData) {
+
+    document.querySelectorAll("table tr").forEach(tr => {
+
+        const tds = tr.querySelectorAll("td");
+        if (tds.length < 5) return;
+
+        const omschrijving = tds[0].textContent.toLowerCase();
+        const tdStart  = tds[1];
+        const tdEind   = tds[2];
+        const tdAantal = tds[3];
+        const tdType   = tds[4];
+
+        const type = tdType.textContent.trim().toLowerCase();
+
+        if (!["kwh", "m³"].includes(type)) return;
+        if (!/^\d{2}-\d{2}-\d{4}$/.test(tdStart.textContent)) return;
+        if (!/^\d{2}-\d{2}-\d{4}$/.test(tdEind.textContent)) return;
+
+        const startD = parseDatumNL(tdStart.textContent.trim());
+        const eindD  = parseDatumNL(tdEind.textContent.trim());
+
+        const start = csvData.find(r => r.datum.getTime() === startD.getTime());
+        const eind  = csvData.find(r => r.datum.getTime() === eindD.getTime());
+
+        if (!start || !eind) return;
+
+        let waarde = 0;
+
+        // GAS
+        if (type === "m³") {
+            waarde = eind.gas - start.gas;
+        }
+
+        // ELEKTRA
+        if (type === "kwh") {
+
+            // 🔥 NIEUWE REGEL: Energiebelasting zone 1
+            if (omschrijving.includes("energiebelasting zone 1")) {
+                waarde =
+                    (eind.p1 - start.p1) + (eind.p2 - start.p2)
+                  - ((eind.n1 - start.n1) + (eind.n2 - start.n2));
+            }
+
+            // Teruglevering boven verbruik
+            else if (omschrijving.includes("teruglevering boven verbruik")) {
+                waarde = eind.n - start.n;
+            }
+
+            // Normaal verbruik
+            else {
+                waarde = eind.p - start.p;
+            }
+        }
+
+        tdAantal.textContent = waarde.toFixed(2).replace('.', ',');
+    });
+
+}
+
+
+/* =====================================================
+   BEDRAGEN BEREKENEN
+===================================================== */
+<!--
+function berekenBedragen() {
+
+    document.querySelectorAll("table tr").forEach(tr => {
+
+        const tds = tr.querySelectorAll("td");
+        if (tds.length < 7) return;
+
+        const tdAantal = tds[3];
+        const tdTarief = tds[5];
+        const tdBedrag = tds[6];
+
+        const aantalTekst = tdAantal.textContent.trim();
+        const tariefTekst = tdTarief.textContent.trim();
+
+        if (!aantalTekst || !tariefTekst) return;
+
+        const aantal = parseFloat(aantalTekst.replace(',', '.'));
+        const tarief = parseFloat(tariefTekst.replace(',', '.'));
+
+        if (isNaN(aantal) || isNaN(tarief)) return;
+        const bedrag = aantal * tarief;
+
+        tdBedrag.textContent = bedrag.toFixed(2).replace('.', ',');
+    });
+}
+
+function berekenBedragen() {
+
+    document.querySelectorAll("table tr").forEach(tr => {
+
+        const tds = tr.querySelectorAll("td");
+        if (tds.length < 8) return;
+
+        const tdAantal = tds[3];   // kolom 4
+        const tdTarief = tds[5];   // kolom 6
+        const tdBedrag = tds[6];   // kolom 7
+        const tdTotaal = tds[7];   // kolom 8
+
+        const aantal = parseFloat(tdAantal.textContent.replace(',', '.'));
+        const tariefTekst = tdTarief.textContent.trim();
+
+        if (isNaN(aantal) || !tariefTekst) return;
+
+        let bedrag = 0;
+
+        if (tariefTekst.includes('%')) {
+
+            const percentage = parseFloat(
+                tariefTekst.replace('%', '').replace(',', '.')
+            );
+
+            if (!isNaN(percentage)) {
+                bedrag = (aantal * (percentage / 100));
+            }
+
+        } else {
+
+            const tarief = parseFloat(tariefTekst.replace(',', '.'));
+            if (!isNaN(tarief)) {
+                bedrag = aantal * tarief;
+            }
+        }
+
+        const resultaat = bedrag.toFixed(2).replace('.', ',');
+
+        tdBedrag.textContent = resultaat;  // kolom 7
+        tdTotaal.textContent = resultaat;  // kolom 8
+
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    berekenBedragen();
+});
+-->
+function berekenBedragen() {
+    document.querySelectorAll("table tr").forEach(tr => {
+        const tds = tr.querySelectorAll("td");
+        if (tds.length < 8) return;
+
+        const tdAantal = tds[3];
+        const tdTarief = tds[5];
+        const tdBedrag = tds[6];
+        const tdTotaal = tds[7];
+
+        const aantal = parseFloat(tdAantal.textContent.replace(',', '.'));
+        const tariefTekst = tdTarief.textContent.trim();
+        if (isNaN(aantal) || !tariefTekst) return;
+
+        let bedrag = 0;
+
+        if (tariefTekst.includes('%')) {
+            const percentage = parseFloat(
+                tariefTekst.replace('%', '').replace(',', '.')
+            );
+            if (!isNaN(percentage)) {
+                bedrag = aantal * (percentage / 100);
+            }
+        } else {
+            const tarief = parseFloat(
+                tariefTekst.replace(',', '.')
+            );
+            if (!isNaN(tarief)) {
+                bedrag = aantal * tarief;
+            }
+        }
+
+        const resultaat = bedrag.toFixed(2).replace('.', ',');
+
+        tdBedrag.textContent = resultaat;
+        tdTotaal.textContent = resultaat;
+
+        // 🔥 AUTOMATISCH NEGATIEF ROOD MAKEN
+        if (bedrag < 0) {
+            tdBedrag.classList.add("negatief");
+            tdTotaal.classList.add("negatief");
+        } else {
+            tdBedrag.classList.remove("negatief");
+            tdTotaal.classList.remove("negatief");
+        }
+    });
+}
+
+function haalVoorschotOp() {
+    let totaal = 0;
+
+    document.querySelectorAll("#tabelGas tr").forEach(tr => {
+        const omschrijving = tr.children[0]?.textContent.toLowerCase() || "";
+
+        if (omschrijving.includes("betaald voorschot")) {
+            const td = tr.children[7]; // kolom 8 = subtotaal
+            if (!td) return;
+
+            const waarde = parseFloat(
+                td.textContent.replace(",", ".").replace(/[^\d.-]/g, "")
+            );
+
+            if (!isNaN(waarde)) {
+                totaal += waarde;
+            }
+        }
+    });
+
+    return totaal;
+} 
+/* =====================================================
+   INIT
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", async function () {
+
+    await laadTarieven();
+    updateEindDatums();
+    berekenDagen();
+
+    const csvData = await laadCSV('data.csv');
+    berekenVerbruik(csvData);
+
+    berekenBedragen();
+});
+
+/* =====================================================
+   CORRECTIE KORTING
+===================================================== */
+<!--
+function corrigeerKortingBlok() {
+    const rijen = document.querySelectorAll("#tabelstroom tr");
+    let eersteLeveringWaarde = null; // waarde van "Variabele leveringskosten enkeltarief"
+    let blokStart = null;            // eerste regel van het Korting Thuisvoordeel-blok
+
+    // Eerst de waarde van de eerste leveringregel ophalen
+    rijen.forEach(tr => {
+        const tds = tr.querySelectorAll("td");
+        if (tds.length < 8) return;
+
+        const omschrijving = tds[0].textContent.toLowerCase();
+        if (omschrijving.includes("variabele leveringskosten enkeltarief") && eersteLeveringWaarde === null) {
+            const waarde = parseFloat(
+                tds[6].textContent.replace(',', '.').replace(/[^\d.-]/g, '')
+            );
+            if (!isNaN(waarde)) {
+                eersteLeveringWaarde = waarde;
+            }
+        }
+    });
+
+    // Dan het Korting Thuisvoordeel-blok corrigeren
+    rijen.forEach((tr, idx) => {
+        const tds = tr.querySelectorAll("td");
+        if (tds.length < 4) return;
+
+        const omschrijving = tds[0].textContent.toLowerCase();
+
+        if (omschrijving.includes("korting thuisvoordeel")) {
+            if (blokStart === null) {
+                blokStart = idx; // onthoud eerste regel van het blok
+            }
+        } else {
+            // einde van een blok: pas waarde toe
+            if (blokStart !== null && eersteLeveringWaarde !== null) {
+                const eersteTd = rijen[blokStart].querySelectorAll("td")[3];
+                eersteTd.textContent = eersteLeveringWaarde.toFixed(2).replace('.', ',');
+                // overige regels leeg maken
+                for (let i = blokStart + 1; i < idx; i++) {
+                    const td = rijen[i].querySelectorAll("td")[3];
+                    if (td) td.textContent = '';
+                }
+            }
+            blokStart = null;
+        }
+    });
+
+    // voor het geval het blok tot het einde van de tabel loopt
+    if (blokStart !== null && eersteLeveringWaarde !== null) {
+        const eersteTd = rijen[blokStart].querySelectorAll("td")[3];
+        eersteTd.textContent = eersteLeveringWaarde.toFixed(2).replace('.', ',');
+        for (let i = blokStart + 1; i < rijen.length; i++) {
+            const td = rijen[i].querySelectorAll("td")[3];
+            if (td) td.textContent = '';
+        }
+    }
+
+    berekenBedragen(); // bestaande functie opnieuw uitvoeren
+}
+-->
+function corrigeerKortingBlok() {
+
+    const vandaag = new Date();
+    vandaag.setHours(0,0,0,0);
+
+    const rijen = document.querySelectorAll("#tabelstroom tr");
+
+    rijen.forEach(tr => {
+
+        const tds = tr.querySelectorAll("td");
+        if (tds.length < 8) return;
+
+        const omschrijving = tds[0].textContent.toLowerCase();
+        if (!omschrijving.includes("korting thuisvoordeel")) return;
+
+        const startTekst = tds[1].textContent.trim();
+        const eindTekst  = tds[2].textContent.trim();
+
+        if (!/^\d{2}-\d{2}-\d{4}$/.test(startTekst)) return;
+
+        const startDatum = parseDatumNL(startTekst);
+        startDatum.setHours(0,0,0,0);
+
+        // ✅ ALS DATUM IN DE TOEKOMST → LEEG LATEN
+        if (startDatum > vandaag) {
+            tds[3].textContent = "";
+            tds[6].textContent = "";
+            tds[7].textContent = "";
+            return;
+        }
+
+        // Zoek bijpassende Variabele leveringskosten regel
+        rijen.forEach(leveringRij => {
+
+            const lTds = leveringRij.querySelectorAll("td");
+            if (lTds.length < 8) return;
+
+            const lOmschrijving = lTds[0].textContent.toLowerCase();
+            if (!lOmschrijving.includes("variabele leveringskosten enkeltarief")) return;
+
+            const lStart = lTds[1].textContent.trim();
+            const lEind  = lTds[2].textContent.trim();
+
+            if (lStart === startTekst && lEind === eindTekst) {
+
+                const subtotaalTekst = lTds[7].textContent.trim();
+                const subtotaal = parseFloat(
+                    subtotaalTekst.replace(',', '.').replace(/[^\d.-]/g, '')
+                );
+
+                if (!isNaN(subtotaal)) {
+                    tds[3].textContent = subtotaal
+                        .toFixed(2)
+                        .replace('.', ',');
+                }
+            }
+        });
+    });
+
+    // opnieuw bedragen berekenen
+    berekenBedragen();
+}
+
+document.addEventListener("DOMContentLoaded", async function () {
+
+    // Eerst andere berekeningen laten lopen
+    await new Promise(r => setTimeout(r, 500));
+
+    corrigeerKortingBlok();
+});
+
+document.addEventListener("DOMContentLoaded", async function () {
+
+    // Eerst andere berekeningen laten lopen
+    await new Promise(r => setTimeout(r, 500));
+
+    corrigeerKortingBlok();
+});
+/* =====================================================
+   SUBTOTALEN PER BLOK
+===================================================== */
+
+function berekenSubtotaalPerBlok() {
+
+    document.querySelectorAll("table").forEach(table => {
+
+        let lopendTotaal = 0;
+        let laatsteRij = null;
+
+        table.querySelectorAll("tr").forEach(tr => {
+
+            // Nieuwe sectie → afsluiten vorig blok
+            if (tr.classList.contains("section")) {
+
+                if (laatsteRij && lopendTotaal !== 0) {
+                    plaatsSubtotaal(laatsteRij, lopendTotaal);
+                }
+
+                lopendTotaal = 0;
+                laatsteRij = null;
+                return;
+            }
+
+            const tds = tr.querySelectorAll("td");
+            if (tds.length < 7) return;
+
+            const bedragTekst = tds[6].textContent.trim();
+            if (!bedragTekst) return;
+
+            const bedrag = parseFloat(
+                bedragTekst.replace(',', '.').replace(/[^\d.-]/g, '')
+            );
+
+            if (!isNaN(bedrag)) {
+                lopendTotaal += bedrag;
+                laatsteRij = tr;
+            }
+        });
+
+        // Laatste blok van tabel
+        if (laatsteRij && lopendTotaal !== 0) {
+            plaatsSubtotaal(laatsteRij, lopendTotaal);
+        }
+
+    });
+}
+
+function plaatsSubtotaal(rij, totaal) {
+
+    const tds = rij.querySelectorAll("td");
+
+    tds[7].textContent = totaal
+        .toFixed(2)
+        .replace('.', ',');
+
+    // onderstreep laatste 3 kolommen
+    for (let i = tds.length - 3; i < tds.length; i++) {
+        tds[i].style.borderBottom = "2px solid black";
+    }
+}
+
+/* =====================================================
+   NEGATIEVE GETALLEN ROOD KLEUREN
+===================================================== */
+
+function kleurNegatieveGetallen() {
+
+    const cellen = document.querySelectorAll("#tabelstroom td");
+
+    cellen.forEach(td => {
+
+        const waarde = parseFloat(
+            td.textContent.replace(',', '.')
+        );
+
+        if (!isNaN(waarde) && waarde < 0) {
+            td.style.color = "red";
+        } else {
+            td.style.color = ""; // reset als positief
+        }
+    });
+}
+
+/* =====================================================
+   CORRECTIE TARIEF TERUGLEVERING BOVEN VERBRUIK
+===================================================== */
+
+function corrigeerTerugleveringTarief1() {
+
+    const rijen = document.querySelectorAll("#tabelstroom tr");
+
+    rijen.forEach(tr => {
+
+        const tds = tr.querySelectorAll("td");
+        if (tds.length < 6) return;
+
+        const omschrijving = tds[0].textContent.toLowerCase();
+        if (!omschrijving.includes("teruglevering boven verbruik")) return;
+
+        const start = tds[1].textContent.trim();
+        const eind  = tds[2].textContent.trim();
+
+        const aantal = parseFloat(
+            tds[3].textContent.replace(',', '.')
+        );
+
+        if (isNaN(aantal)) return;
+
+        let nieuweTariefRij = null;
+
+        // 🔹 ALS NEGATIEF → eigen tarief gebruiken
+        if (aantal < 0) {
+
+            nieuweTariefRij = tr;
+
+        } else {
+
+            // 🔹 ALS POSITIEF → tarief halen uit Variabele leveringskosten
+            nieuweTariefRij = Array.from(rijen).find(r => {
+
+                const c = r.querySelectorAll("td");
+                if (c.length < 6) return false;
+
+                return (
+                    c[0].textContent.toLowerCase().includes("variabele leveringskosten enkeltarief") &&
+                    c[1].textContent.trim() === start &&
+                    c[2].textContent.trim() === eind
+                );
+            });
+        }
+
+        if (!nieuweTariefRij) return;
+
+        let tariefBron = parseFloat(
+            nieuweTariefRij.children[5].textContent
+                .replace(',', '.')
+        );
+
+        if (isNaN(tariefBron)) return;
+
+        // 🔥 Tarief altijd negatief maken
+        tariefBron = -Math.abs(tariefBron);
+
+        tds[5].textContent = tariefBron
+            .toFixed(5)
+            .replace('.', ',');
+    });
+}
+
+/* =====================================================
+   UITVOERING VOLGORDE
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", async function () {
+
+    await new Promise(r => setTimeout(r, 500));
+corrigeerTerugleveringTarief1();
+berekenMaanden(); // 🔥 NIEUW
+berekenBedragen();
+corrigeerKortingBlok();
+corrigeerRij17Tarief();
+berekenSubtotaalPerBlok();
+berekenBedragen();
+berekenEindTotalen();
+kleurNegatieveGetallen()
+
+});
+
+</script>
+
+<div id="debugStroom" style="color:red; font-weight:bold;"></div>
+<!--
+<script>
+window.addEventListener("load", function () {
+
+    setTimeout(function () {
+
+        const debugDiv = document.getElementById('debugStroom');
+        if (!debugDiv) return;
+
+        debugDiv.innerHTML = "";
+        let totaal = 0;
+
+        const rows = document.querySelectorAll('#tabelstroom tr');
+
+        rows.forEach((tr, index) => {
+
+            let tekst = "";
+            let waarde = 0;
+
+            // probeer subtotaal eerst
+            const tdSub = tr.querySelector("td.subtotaal");
+
+            if (tdSub) {
+                tekst = tdSub.textContent.trim();
+            } else if (tr.children.length > 0) {
+                // fallback: laatste kolom
+                tekst = tr.children[tr.children.length - 1].textContent.trim();
+            }
+
+            if (tekst !== "") {
+                waarde = parseFloat(tekst.replace(',', '.'));
+                if (!isNaN(waarde)) {
+                    totaal += waarde;
+                } else {
+                    waarde = 0;
+                }
+            }
+
+            debugDiv.innerHTML += `
+                Rij ${index + 1} → 
+                Inhoud: "${tekst}" → 
+                Waarde: ${waarde.toFixed(2)}
+                <br>
+            `;
+        });
+
+        debugDiv.innerHTML += `<hr><strong>Totaal Stroom: ${totaal.toFixed(2)}</strong>`;
+
+    }, 800);
+
+});
+</script>
+
+
+<script>
+window.addEventListener("load", function () {
+
+    setTimeout(function () {
+
+        const debugDiv = document.getElementById('debugStroom');
+        if (!debugDiv) return;
+
+        debugDiv.innerHTML = "";
+        let totaal = 0;
+
+        const rows = document.querySelectorAll('#tabelstroom tr');
+
+        rows.forEach((tr, index) => {
+            let gevonden = false;
+            let waarde = 0;
+            let inhoud = "";
+
+            const tds = tr.querySelectorAll("td");
+
+            for (let td of tds) {
+                let txt = td.textContent.trim();
+                // Check of het een getal is
+                if (/^-?\d{1,3}(?:\.\d{3})*(?:,\d+)?$|^-?\d+(\.\d+)?$/.test(txt)) {
+                    // vervang komma door punt voor parseFloat
+                    waarde = parseFloat(txt.replace(/\./g, '').replace(',', '.'));
+                    inhoud = txt;
+                    totaal += waarde;
+                    gevonden = true;
+                    break; // eerste getal in de rij pakken
+                }
+            }
+
+            debugDiv.innerHTML += `
+                Rij ${index + 1} → 
+                Inhoud: "${inhoud}" → 
+                Waarde: ${waarde.toFixed(2)}<br>
+            `;
+        });
+
+        debugDiv.innerHTML += `<hr><strong>Totaal Stroom: ${totaal.toFixed(2)}</strong>`;
+
+        // Totaal in de tabel invullen
+        const totaalTd = document.querySelector('td.totaal_stroom');
+        if (totaalTd) totaalTd.textContent = totaal.toFixed(2).replace('.', ',');
+
+    }, 800);
+
+});
+</script>
+
+
+<div id="debugStroom" style="color:red; font-weight:bold;"></div>
+<div id="debugGas" style="color:blue; font-weight:bold;"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", async function() {
+
+    // korte timeout zodat alle eerdere berekeningen klaar zijn
+    await new Promise(r => setTimeout(r, 500));
+
+    function berekenTotaal(selector, debugId) {
+        const debugDiv = document.getElementById(debugId);
+        debugDiv.innerHTML = ""; // reset
+        let totaal = 0;
+
+        const rijen = document.querySelectorAll(selector + " tr");
+
+        rijen.forEach((tr, index) => {
+            // pak subtotaal of fallback laatste kolom
+            let td = tr.querySelector('td.subtotaal');
+            if (!td) td = tr.children[tr.children.length - 1];
+            if (!td) return;
+
+            // alleen als er een geldige inhoud is
+            let waarde = parseFloat(td.textContent.replace(',', '.')) || 0;
+
+            // negeer rijen die waarschijnlijk bloktotalen zijn
+            const omschrijving = tr.children[0]?.textContent.trim() || "";
+            if (!omschrijving && (waarde !== 0)) {
+                // dit lijkt een totale rij → niet meetellen
+                debugDiv.innerHTML += `Rij ${index+1} → totaalrij genegeerd: ${waarde.toFixed(2)}<br>`;
+                return;
+            }
+
+            totaal += waarde;
+            debugDiv.innerHTML += `Rij ${index+1} → Inhoud: "${omschrijving}" → Waarde: ${waarde.toFixed(2)}<br>`;
+        });
+
+        debugDiv.innerHTML += `<strong>Totaal: ${totaal.toFixed(2)}</strong>`;
+
+        // schrijf totaal in tabel, als cel aanwezig
+        const totaalTd = document.querySelector(selector + " td.totaal");
+        if (totaalTd) totaalTd.textContent = totaal.toFixed(2).replace('.', ',');
+    }
+
+    // Totaal stroom en gas berekenen
+    berekenTotaal("#tabelstroom", "debugStroom");
+    berekenTotaal("#tabelGas", "debugGas");
+});
+</script>
+-->
+<!--
+<div id="debugStroom" style="color:red; font-weight:bold;"></div>
+<div id="debugGas" style="color:blue; font-weight:bold;"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", async function() {
+
+    // korte timeout zodat alle eerdere berekeningen klaar zijn
+    await new Promise(r => setTimeout(r, 500));
+
+    function berekenTotaal(selector) {
+        let totaal = 0;
+        const debugDiv = selector.includes("stroom") ? document.getElementById("debugStroom") : document.getElementById("debugGas");
+        debugDiv.innerHTML = ""; // reset
+
+        const rijen = document.querySelectorAll(selector + " tr");
+
+        rijen.forEach((tr, index) => {
+            const omschrijving = tr.children[0]?.textContent.trim() || "";
+
+            // pak subtotaal-cel of laatste kolom
+            let td = tr.querySelector("td.subtotaal");
+            if (!td) td = tr.children[tr.children.length - 1];
+            if (!td) return;
+
+            let waarde = parseFloat(td.textContent.replace(",", ".")) || 0;
+
+            // Alleen meetellen als er een omschrijving staat of waarde niet totaalrij is
+            if (!omschrijving && (waarde !== 0)) {
+                debugDiv.innerHTML += `Rij ${index+1} → totaalrij genegeerd: ${waarde.toFixed(2)}<br>`;
+                return;
+            }
+
+            totaal += waarde;
+
+            debugDiv.innerHTML += `Rij ${index+1} → Inhoud: "${omschrijving}" → Waarde: ${waarde.toFixed(2)}<br>`;
+        });
+
+        debugDiv.innerHTML += `<strong>Totaal: ${totaal.toFixed(2)}</strong>`;
+        return totaal;
+    }
+
+
+    // Bereken A, B en A+B
+    const totaalStroom = berekenTotaal("#tabelstroom");
+    const totaalGas = berekenTotaal("#tabelGas");
+    const totaalAB = totaalStroom + totaalGas;
+
+    // Vul de cellen in voor A, B en A+B
+    document.querySelectorAll("td").forEach(td => {
+        const text = td.textContent.trim();
+        if (text === "A") td.nextElementSibling.textContent = totaalStroom.toFixed(2).replace(".", ",");
+        if (text === "B") td.nextElementSibling.textContent = totaalGas.toFixed(2).replace(".", ",");
+        if (text === "Totalen A+B") td.nextElementSibling.textContent = totaalAB.toFixed(2).replace(".", ",");
+    });
+
+});
+</script>
+-->
+<script>
+document.addEventListener("DOMContentLoaded", async function() {
+
+    // korte timeout zodat eerdere berekeningen klaar zijn
+    await new Promise(r => setTimeout(r, 500));
+
+    // 1️⃣ Functie om totaal te berekenen van een tabel
+    function berekenTotaal(selector) {
+        let totaal = 0;
+        const rijen = document.querySelectorAll(selector + " tr");
+
+        rijen.forEach((tr) => {
+            const omschrijving = tr.children[0]?.textContent.trim().toLowerCase() || "";
+
+            // ❗ VOORSCHOT UITSLUITEN
+            if (omschrijving.includes("betaald voorschot")) return;
+
+            let td = tr.querySelector("td.subtotaal");
+            if (!td) td = tr.children[tr.children.length - 1];
+            if (!td) return;
+
+            let waarde = parseFloat(td.textContent.replace(",", ".")) || 0;
+
+            if (!omschrijving && waarde === 0) return;
+
+            totaal += waarde;
+        });
+
+        return totaal;
+    }
+
+    // 2️⃣ Voorschot apart ophalen
+    function haalVoorschotOp() {
+        let totaal = 0;
+
+        document.querySelectorAll("#tabelGas tr").forEach(tr => {
+            const omschrijving = tr.children[0]?.textContent.toLowerCase() || "";
+
+            if (omschrijving.includes("betaald voorschot")) {
+                const td = tr.children[7];
+                if (!td) return;
+
+                const waarde = parseFloat(
+                    td.textContent.replace(",", ".").replace(/[^\d.-]/g, "")
+                );
+
+                if (!isNaN(waarde)) {
+                    totaal += waarde;
+                }
+            }
+        });
+
+        return totaal;
+    }
+
+    // 3️⃣ Functie om euro te formatteren
+    function formatEuro(bedrag) {
+        return Number(bedrag).toLocaleString("nl-NL", {
+            style: "currency",
+            currency: "EUR"
+        });
+    }
+
+    // 4️⃣ Berekeningen
+    const totaalStroom = berekenTotaal("#tabelstroom"); // A
+    const totaalGas = berekenTotaal("#tabelGas");       // B
+    const totaalAB = totaalStroom + totaalGas;          // A+B
+    const voorschot = haalVoorschotOp();                // los voorschot
+    const eindTotaal = totaalAB + voorschot;            // eindbedrag
+
+    // 5️⃣ Vul A, B en A+B
+    document.querySelectorAll("td").forEach(td => {
+        const text = td.textContent.trim();
+
+        if (text === "A") td.nextElementSibling.textContent = formatEuro(totaalStroom);
+        if (text === "B") td.nextElementSibling.textContent = formatEuro(totaalGas);
+        if (text === "Totalen A+B") td.nextElementSibling.textContent = formatEuro(totaalAB);
+    });
+
+    // 6️⃣ Terug / bijbetalen (NU CORRECT)
+    const resultaatTekst = document.querySelector(".subtotaal_terug");
+
+if (resultaatTekst) {
+
+    if (eindTotaal >0) {
+        resultaatTekst.textContent = " " + formatEuro(Math.abs(eindTotaal));
+        resultaatTekst.style.color = "red";
+    } else {
+        resultaatTekst.textContent = " " + formatEuro(eindTotaal);
+        resultaatTekst.style.color = "green";
+    }
+}
+// 👉 NIEUW: kolom 7 en 8 vullen (alleen laatste rij)
+["#tabelstroom", "#tabelGas"].forEach(selector => {
+
+    const rows = document.querySelectorAll(selector + " tr");
+    const tr = rows[rows.length - 1]; // laatste rij (totaal)
+
+    if (!tr) return;
+
+    const kolom7 = tr.children[6]; // kolom 7
+    const kolom8 = tr.children[7]; // kolom 8
+
+    if (!kolom7 || !kolom8) return;
+
+    if (eindTotaal > 0) {
+        kolom7.textContent = "Bijbetalen";
+        kolom7.style.color = "red";
+
+        kolom8.textContent = formatEuro(Math.abs(eindTotaal));
+        kolom8.style.color = "red";
+
+    } else {
+        kolom7.textContent = "Terug te ontvangen";
+        kolom7.style.color = "green";
+
+        kolom8.textContent = formatEuro(Math.abs(eindTotaal));
+        kolom8.style.color = "green";
+    }
+});
+    // 7️⃣ Kolommen 7 en 8 formatteren
+    ["#tabelstroom", "#tabelGas"].forEach(selector => {
+        document.querySelectorAll(selector + " tr").forEach(tr => {
+            [6, 7].forEach(index => {
+                const td = tr.children[index];
+                if (!td) return;
+
+                let waarde = td.textContent.trim();
+
+                waarde = waarde.replace("€", "").replace(/\s/g, "");
+
+                const nummer = parseFloat(waarde.replace(",", "."));
+
+                if (!isNaN(nummer) && nummer !== 0) {
+                    td.textContent = formatEuro(nummer);
+                }
+            });
+        });
+    });
+
+});
+
+</script>
+
+</body>
+</html>
+	 
